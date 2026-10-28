@@ -15,18 +15,24 @@ describe("차원 데이터", () => {
   it("6개 차원이 정해진 순서로 있다", () => {
     expect(dimensions.map((d) => d.id)).toEqual([...DIMENSION_IDS]);
   });
+
+  it("양극·중간 상세 해석 문구가 모두 있다", () => {
+    for (const d of dimensions) {
+      for (const text of [d.high.detail, d.low.detail, d.balanced]) expect(text.length, d.id).toBeGreaterThan(20);
+    }
+  });
 });
 
 describe("문항 데이터", () => {
-  it("42문항, id 중복 없음", () => {
-    expect(items).toHaveLength(42);
-    expect(new Set(items.map((i) => i.id)).size).toBe(42);
+  it("54문항, id 중복 없음", () => {
+    expect(items).toHaveLength(54);
+    expect(new Set(items.map((i) => i.id)).size).toBe(54);
   });
 
-  it.each(DIMENSION_IDS)("차원 %s: 7문항, 역채점 3개", (dim) => {
+  it.each(DIMENSION_IDS)("차원 %s: 9문항, 역채점 4개", (dim) => {
     const dimItems = items.filter((i) => i.dimension === dim);
-    expect(dimItems).toHaveLength(7);
-    expect(dimItems.filter((i) => i.reverse)).toHaveLength(3);
+    expect(dimItems).toHaveLength(9);
+    expect(dimItems.filter((i) => i.reverse)).toHaveLength(4);
   });
 
   it("문장 길이 15~40자", () => {

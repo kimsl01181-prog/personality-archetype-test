@@ -1,296 +1,380 @@
 [
   {
     "id": "q01",
-    "text": "사람들과 실컷 떠들고 오면 기운이 난다.",
+    "text": "금요일 밤 갑자기 잡힌 약속, 솔직히 반갑다.",
     "dimension": "X",
     "reverse": false,
     "ipipFacet": "Sociability"
   },
   {
     "id": "q02",
-    "text": "서운했던 사람과도 금방 예전처럼 지내게 된다.",
+    "text": "메뉴 정할 때 \"아무거나\" 하고 진짜 아무거나 먹는다.",
     "dimension": "A",
     "reverse": false,
-    "ipipFacet": "Forgiveness"
+    "ipipFacet": "Flexibility"
   },
   {
     "id": "q03",
-    "text": "여행 가기 전에 일정을 시간대별로 짜 두는 편이다.",
+    "text": "여행 가면 시간 단위로 일정을 짜야 마음이 놓인다.",
     "dimension": "C",
     "reverse": false,
     "ipipFacet": "Organization"
   },
   {
     "id": "q04",
-    "text": "슬픈 영화를 보면 눈물이 쉽게 난다.",
+    "text": "예능 보다가 감동 장면에서 혼자 운 적이 있다.",
     "dimension": "E",
     "reverse": false,
     "ipipFacet": "Sentimentality"
   },
   {
     "id": "q05",
-    "text": "전시회나 공연을 일부러 찾아가서 보는 편이다.",
+    "text": "예쁜 카페나 전시는 일부러 찾아가는 편이다.",
     "dimension": "O",
     "reverse": false,
     "ipipFacet": "Aesthetic Appreciation"
   },
   {
     "id": "q06",
-    "text": "쓸 만하기만 하면 비싼 브랜드가 아니어도 괜찮다.",
+    "text": "칭찬을 받으면 \"아니에요~\"가 반사적으로 나온다.",
     "dimension": "H",
     "reverse": false,
-    "ipipFacet": "Greed Avoidance"
+    "ipipFacet": "Modesty"
   },
   {
     "id": "q07",
-    "text": "식당에 가면 늘 먹던 메뉴를 시키는 편이다.",
+    "text": "맛집은 리뷰 많은 검증된 곳만 간다.",
     "dimension": "O",
     "reverse": true,
     "ipipFacet": "Unconventionality"
   },
   {
     "id": "q08",
-    "text": "중요한 일을 앞두면 이것저것 미리 걱정이 된다.",
+    "text": "카톡 읽씹을 당하면 내가 뭘 잘못했나 곱씹게 된다.",
     "dimension": "E",
     "reverse": false,
     "ipipFacet": "Anxiety"
   },
   {
     "id": "q09",
-    "text": "아무도 모를 일이라도 정해진 규칙대로 하는 게 편하다.",
+    "text": "남들 다 가진 물건이라도 나는 없어도 그만이다.",
     "dimension": "H",
     "reverse": false,
-    "ipipFacet": "Fairness"
+    "ipipFacet": "Greed Avoidance"
   },
   {
     "id": "q10",
-    "text": "마감이 닥쳐야 비로소 일에 속도가 붙는다.",
+    "text": "할 일이 있으면 일단 유튜브부터 켜게 된다.",
     "dimension": "C",
     "reverse": true,
     "ipipFacet": "Diligence"
   },
   {
     "id": "q11",
-    "text": "약속 없는 주말엔 오히려 마음이 편하다.",
+    "text": "약속이 취소되면 속으로 살짝 신난다.",
     "dimension": "X",
     "reverse": true,
     "ipipFacet": "Sociability"
   },
   {
     "id": "q12",
-    "text": "의견이 부딪히면 내가 먼저 한발 물러서는 편이다.",
+    "text": "서운하게 한 친구도 치킨 한 번 사주면 다 풀린다.",
     "dimension": "A",
     "reverse": false,
-    "ipipFacet": "Flexibility"
+    "ipipFacet": "Forgiveness"
   },
   {
     "id": "q13",
-    "text": "무언가를 보내기 전에 오타가 없는지 몇 번씩 확인한다.",
+    "text": "보낸 카톡에 오타가 있으면 꼭 고쳐서 다시 보낸다.",
     "dimension": "C",
     "reverse": false,
     "ipipFacet": "Perfectionism"
   },
   {
     "id": "q14",
-    "text": "내가 잘한 일은 사람들이 알아줬으면 좋겠다.",
+    "text": "솔직히 명품 로고가 잘 보이는 게 좋다.",
     "dimension": "H",
     "reverse": true,
-    "ipipFacet": "Modesty"
+    "ipipFacet": "Greed Avoidance"
   },
   {
     "id": "q15",
-    "text": "상대가 틀렸다 싶으면 그 자리에서 바로 짚고 넘어간다.",
+    "text": "맞춤법 틀린 걸 보면 지적하고 싶어 근질거린다.",
     "dimension": "A",
     "reverse": true,
     "ipipFacet": "Gentleness"
   },
   {
     "id": "q16",
-    "text": "궁금한 게 생기면 관련 자료를 한참 찾아본다.",
+    "text": "궁금한 게 생기면 나무위키 링크 타다 새벽이 된다.",
     "dimension": "O",
     "reverse": false,
     "ipipFacet": "Inquisitiveness"
   },
   {
     "id": "q17",
-    "text": "다칠 위험이 있는 운동도 크게 겁나지 않는다.",
+    "text": "번지점프 같은 익스트림 체험을 꼭 해보고 싶다.",
     "dimension": "E",
     "reverse": true,
     "ipipFacet": "Fearfulness"
   },
   {
     "id": "q18",
-    "text": "처음 보는 사람에게도 내가 먼저 말을 거는 편이다.",
+    "text": "처음 간 모임에서 먼저 말 거는 쪽은 주로 나다.",
     "dimension": "X",
     "reverse": false,
     "ipipFacet": "Social Boldness"
   },
   {
     "id": "q19",
-    "text": "고민이 생기면 누군가에게 털어놓아야 마음이 놓인다.",
+    "text": "고민이 생기면 친구한테 바로 털어놔야 속이 풀린다.",
     "dimension": "E",
     "reverse": false,
     "ipipFacet": "Dependence"
   },
   {
     "id": "q20",
-    "text": "단체 대화방에서는 주로 읽기만 하는 편이다.",
+    "text": "사람 많은 곳에 다녀오면 소셜 배터리가 바닥난다.",
     "dimension": "X",
     "reverse": true,
-    "ipipFacet": "Social Boldness"
+    "ipipFacet": "Liveliness"
   },
   {
     "id": "q21",
-    "text": "이론적인 이야기보다 당장 쓸모 있는 이야기가 좋다.",
+    "text": "인테리어나 플레이팅 감성은 솔직히 잘 모르겠다.",
     "dimension": "O",
     "reverse": true,
-    "ipipFacet": "Inquisitiveness"
+    "ipipFacet": "Aesthetic Appreciation"
   },
   {
     "id": "q22",
-    "text": "식당 줄이 길어도 느긋하게 기다리는 편이다.",
+    "text": "배달이 한참 늦어져도 그러려니 하고 기다린다.",
     "dimension": "A",
     "reverse": false,
     "ipipFacet": "Patience"
   },
   {
     "id": "q23",
-    "text": "칭찬을 받으면 쑥스러워서 얼른 화제를 돌린다.",
+    "text": "친해지고 싶은 사람에게도 아부는 못 하겠다.",
     "dimension": "H",
     "reverse": false,
-    "ipipFacet": "Modesty"
+    "ipipFacet": "Sincerity"
   },
   {
     "id": "q24",
-    "text": "마음에 드는 물건이 보이면 그 자리에서 바로 산다.",
+    "text": "새벽 감성으로 충동구매한 택배가 종종 온다.",
     "dimension": "C",
     "reverse": true,
     "ipipFacet": "Prudence"
   },
   {
     "id": "q25",
-    "text": "명품이나 좋은 차를 가지면 확실히 기분이 좋아진다.",
+    "text": "인스타에 올린 게시물 좋아요 수를 자주 확인한다.",
     "dimension": "H",
     "reverse": true,
-    "ipipFacet": "Greed Avoidance"
+    "ipipFacet": "Modesty"
   },
   {
     "id": "q26",
-    "text": "하기 싫은 일도 일단 시작하면 끝까지 해낸다.",
+    "text": "장바구니에 담아두고 며칠 고민한 뒤에 결제한다.",
     "dimension": "C",
     "reverse": false,
-    "ipipFacet": "Diligence"
+    "ipipFacet": "Prudence"
   },
   {
     "id": "q27",
-    "text": "힘든 일이 있어도 혼자 정리하고 넘어가는 편이다.",
+    "text": "시험이나 발표 전날에도 잠은 푹 잔다.",
     "dimension": "E",
     "reverse": true,
-    "ipipFacet": "Dependence"
+    "ipipFacet": "Anxiety"
   },
   {
     "id": "q28",
-    "text": "주변에서 텐션이 높다는 말을 자주 듣는다.",
+    "text": "노래방에 가면 첫 곡은 내가 먼저 예약한다.",
     "dimension": "X",
     "reverse": false,
     "ipipFacet": "Liveliness"
   },
   {
     "id": "q29",
-    "text": "화가 나면 표정이나 말투에 바로 드러난다.",
+    "text": "한번 손절한 사람은 다시 받아주지 않는다.",
     "dimension": "A",
     "reverse": true,
-    "ipipFacet": "Patience"
+    "ipipFacet": "Forgiveness"
   },
   {
     "id": "q30",
-    "text": "평범한 물건도 다르게 써 볼 방법을 궁리하곤 한다.",
+    "text": "민초처럼 호불호 갈리는 음식도 일단 먹어본다.",
     "dimension": "O",
     "reverse": false,
-    "ipipFacet": "Creativity"
+    "ipipFacet": "Unconventionality"
   },
   {
     "id": "q31",
-    "text": "남이 실수해도 웬만하면 너그럽게 넘어가는 편이다.",
+    "text": "팀플 무임승차자에게도 웬만하면 좋게 말한다.",
     "dimension": "A",
     "reverse": false,
     "ipipFacet": "Gentleness"
   },
   {
     "id": "q32",
-    "text": "그림이나 음악은 배경 정도로만 즐기는 편이다.",
+    "text": "우주의 끝 같은 얘기는 듣다 보면 졸리다.",
     "dimension": "O",
     "reverse": true,
-    "ipipFacet": "Aesthetic Appreciation"
+    "ipipFacet": "Inquisitiveness"
   },
   {
     "id": "q33",
-    "text": "시끌벅적한 자리에 다녀오면 혼자 쉬는 시간이 꼭 필요하다.",
+    "text": "전화보다 카톡이 백 배 편하다.",
     "dimension": "X",
     "reverse": true,
-    "ipipFacet": "Liveliness"
+    "ipipFacet": "Social Boldness"
   },
   {
     "id": "q34",
-    "text": "부탁할 게 있을 때만 연락하는 건 왠지 내키지 않는다.",
+    "text": "거스름돈을 더 받으면 귀찮아도 돌려주러 간다.",
     "dimension": "H",
     "reverse": false,
-    "ipipFacet": "Sincerity"
+    "ipipFacet": "Fairness"
   },
   {
     "id": "q35",
-    "text": "내 방은 깔끔함보다 편하게 두는 쪽에 가깝다.",
+    "text": "내 휴대폰 사진첩은 정리라는 걸 모른다.",
     "dimension": "C",
     "reverse": true,
     "ipipFacet": "Organization"
   },
   {
     "id": "q36",
-    "text": "무서운 놀이기구는 웬만하면 피하는 편이다.",
+    "text": "공포 영화는 손가락 사이로 겨우 본다.",
     "dimension": "E",
     "reverse": false,
     "ipipFacet": "Fearfulness"
   },
   {
     "id": "q37",
-    "text": "큰돈이 드는 결정은 며칠 동안 따져보고 내린다.",
+    "text": "갓생 루틴을 정해서 꽤 오래 지켜본 적이 있다.",
     "dimension": "C",
     "reverse": false,
-    "ipipFacet": "Prudence"
+    "ipipFacet": "Diligence"
   },
   {
     "id": "q38",
-    "text": "새로운 모임에 가도 금방 편하게 어울린다.",
+    "text": "처음 보는 사람들도 나를 꽤 좋아할 거라고 생각한다.",
     "dimension": "X",
     "reverse": false,
     "ipipFacet": "Social Self-Esteem"
   },
   {
     "id": "q39",
-    "text": "오랜 친구와 헤어질 때도 담담한 편이다.",
+    "text": "힘든 일은 혼자 삭이고 나중에야 말하는 편이다.",
     "dimension": "E",
     "reverse": true,
-    "ipipFacet": "Sentimentality"
+    "ipipFacet": "Dependence"
   },
   {
     "id": "q40",
-    "text": "남들이 엉뚱하다고 하는 생각에 오히려 끌린다.",
+    "text": "다꾸나 리폼처럼 뭔가 직접 만드는 걸 좋아한다.",
     "dimension": "O",
     "reverse": false,
-    "ipipFacet": "Unconventionality"
+    "ipipFacet": "Creativity"
   },
   {
     "id": "q41",
-    "text": "원하는 걸 얻으려면 상대 비위를 맞추는 것도 방법이다.",
+    "text": "잘 보여야 하는 사람 앞에선 연기 모드가 켜진다.",
     "dimension": "H",
     "reverse": true,
     "ipipFacet": "Sincerity"
   },
   {
     "id": "q42",
-    "text": "납득이 될 때까지 내 의견을 끝까지 밀고 간다.",
+    "text": "답답한 사람과 일하면 표정 관리가 안 된다.",
+    "dimension": "A",
+    "reverse": true,
+    "ipipFacet": "Patience"
+  },
+  {
+    "id": "q43",
+    "text": "내가 잘한 일도 굳이 티 내지 않는 편이다.",
+    "dimension": "H",
+    "reverse": false,
+    "ipipFacet": "Modesty"
+  },
+  {
+    "id": "q44",
+    "text": "유행은 확실히 검증된 다음에 따라가는 편이다.",
+    "dimension": "O",
+    "reverse": true,
+    "ipipFacet": "Unconventionality"
+  },
+  {
+    "id": "q45",
+    "text": "식당에서 직원 부르는 게 은근히 부담스럽다.",
+    "dimension": "X",
+    "reverse": true,
+    "ipipFacet": "Social Boldness"
+  },
+  {
+    "id": "q46",
+    "text": "외출하고 나서 고데기나 가스를 껐는지 자주 걱정된다.",
+    "dimension": "E",
+    "reverse": false,
+    "ipipFacet": "Anxiety"
+  },
+  {
+    "id": "q47",
+    "text": "누가 내 뒷담을 했대도 일단 사정부터 들어본다.",
+    "dimension": "A",
+    "reverse": false,
+    "ipipFacet": "Forgiveness"
+  },
+  {
+    "id": "q48",
+    "text": "\"대충 이 정도면 됐지\"가 내 좌우명에 가깝다.",
+    "dimension": "C",
+    "reverse": true,
+    "ipipFacet": "Perfectionism"
+  },
+  {
+    "id": "q49",
+    "text": "새로운 취미를 배우는 데 쓰는 돈은 아깝지 않다.",
+    "dimension": "O",
+    "reverse": false,
+    "ipipFacet": "Inquisitiveness"
+  },
+  {
+    "id": "q50",
+    "text": "말싸움에서 지는 건 정말 참을 수 없다.",
     "dimension": "A",
     "reverse": true,
     "ipipFacet": "Flexibility"
+  },
+  {
+    "id": "q51",
+    "text": "캘린더 앱에 일정을 빠짐없이 적어둔다.",
+    "dimension": "C",
+    "reverse": false,
+    "ipipFacet": "Organization"
+  },
+  {
+    "id": "q52",
+    "text": "들킬 일 없으면 규칙은 살짝 어겨도 된다고 생각한다.",
+    "dimension": "H",
+    "reverse": true,
+    "ipipFacet": "Fairness"
+  },
+  {
+    "id": "q53",
+    "text": "주말 일정이 사람 약속으로 꽉 차야 뿌듯하다.",
+    "dimension": "X",
+    "reverse": false,
+    "ipipFacet": "Sociability"
+  },
+  {
+    "id": "q54",
+    "text": "슬픈 영화도 팝콘 먹으면서 담담하게 본다.",
+    "dimension": "E",
+    "reverse": true,
+    "ipipFacet": "Sentimentality"
   }
 ]

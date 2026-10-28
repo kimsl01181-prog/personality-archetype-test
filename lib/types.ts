@@ -7,6 +7,8 @@ export type DimensionVector = Record<DimensionId, number>;
 export interface PoleInfo {
   label: string;
   description: string;
+  /** 결과 화면 "차원별 상세 해석"에 쓰는 2문장 설명 */
+  detail: string;
 }
 
 export interface Dimension {
@@ -17,6 +19,8 @@ export interface Dimension {
   description: string;
   high: PoleInfo;
   low: PoleInfo;
+  /** 점수가 중간 근처일 때의 상세 해석 */
+  balanced: string;
 }
 
 export interface Item {

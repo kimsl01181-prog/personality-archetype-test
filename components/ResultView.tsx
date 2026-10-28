@@ -8,22 +8,23 @@ import DimensionBars from "./DimensionBars";
 import ShareCard from "./ShareCard";
 import TypeEmblem from "./TypeEmblem";
 import { Hashtags, MiniTypeCard, Section, TypeDetails } from "./TypeProfile";
-import { itemsPerDimension, types } from "@/lib/data";
-import { ink, tint } from "@/lib/profile";
-import { resultFromVector, sumsToVector } from "@/lib/scoring";
-import { decodeSums, SHARE_PARAM } from "@/lib/share";
+import { dimensions, itemsPerDimension, types } from "@/lib/data";
+import { describeLevel, ink, tint } from "@/lib/profile";
+import { resultFromVector, sumsToVector, toPercentScale } from "@/lib/scoring";
+import { decodeShare, SHARE_PARAM } from "@/lib/share";
 import { loadLastResult } from "@/lib/storage";
+import type { DimensionVector } from "@/lib/types";
 
 export default function ResultView() {
   const params = useSearchParams();
   const code = params.get(SHARE_PARAM);
   const result = useMemo(() => {
-    const sums = decodeSums(code, itemsPerDimension);
-    return sums ? resultFromVector(sumsToVector(sums, itemsPerDimension), types) : null;
+    const decoded = decodeShare(code, itemsPerDimension);
+    return decoded ? resultFromVector(sumsToVector(decoded.sums, decoded.itemsPerDimension), types) : null;
   }, [code]);
 
   const [isMine, setIsMine] = useState<boolean | null>(null);
-  useEffect(() => setIsMine(code !== null && loadLastResult() === code?.toLowerCase()), [code]);
+  useEffect(() => setIsMine(code !== null && loadLastResult() === code?.trim()), [code]);
 
   if (!result || !code) {
     return (
@@ -69,6 +70,8 @@ export default function ResultView() {
         </p>
       </Section>
 
+      <DimensionInsights vector={vector} color={type.color} />
+
       <TypeDetails type={type} />
 
       <Section title="숨은 닮은꼴">
@@ -104,6 +107,38 @@ export default function ResultView() {
         </Link>
       </div>
     </div>
+  );
+}
+
+/** 차원별 상세 해석: 내 점수가 어느 쪽인지에 따라 설명을 보여준다. 특징이 뚜렷한 차원부터. */
+function DimensionInsights({ vector, color }: { vector: DimensionVector; color: string }) {
+  const ordered = [...dimensions].sort((a, b) => Math.abs(vector[b.id]) - Math.abs(vector[a.id]));
+  return (
+    <Section title="차원별 상세 해석">
+      <p className="-mt-2 mb-4 text-sm text-slate-500">내 성향이 뚜렷한 순서대로 보여드려요.</p>
+      <ul className="space-y-3">
+        {ordered.map((dim) => {
+          const value = vector[dim.id];
+          const level = describeLevel(value, dim);
+          const body = level.side === "high" ? dim.high.detail : level.side === "low" ? dim.low.detail : dim.balanced;
+          const score = toPercentScale(value);
+          return (
+            <li key={dim.id} className="rounded-2xl bg-slate-50 p-4">
+              <div className="mb-1.5 flex flex-wrap items-baseline justify-between gap-x-2">
+                <span className="font-semibold text-slate-800">{dim.name}</span>
+                <span className="text-sm font-semibold" style={{ color: ink(color) }}>
+                  {level.text}
+                  <span className="ml-1.5 font-normal text-slate-400">
+                    {level.side === "mid" ? "" : `${level.side === "high" ? score : 100 - score}%`}
+                  </span>
+                </span>
+              </div>
+              <p className="text-sm leading-relaxed text-slate-700">{body}</p>
+            </li>
+          );
+        })}
+      </ul>
+    </Section>
   );
 }
 

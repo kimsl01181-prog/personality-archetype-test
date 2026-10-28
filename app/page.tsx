@@ -24,7 +24,7 @@ export default function Home() {
           일상 속 {items.length}개 질문에 답하면 6가지 성격 차원을 분석해 나와 가장 가까운 유형을 찾아드려요.
         </p>
         <ul className="mt-5 flex flex-wrap justify-center gap-2 text-sm font-medium text-slate-600">
-          <li className="rounded-full bg-white px-3 py-1 ring-1 ring-slate-200">⏱ 약 5~7분</li>
+          <li className="rounded-full bg-white px-3 py-1 ring-1 ring-slate-200">⏱ 약 6~8분</li>
           <li className="rounded-full bg-white px-3 py-1 ring-1 ring-slate-200">📝 {items.length}문항</li>
           <li className="rounded-full bg-white px-3 py-1 ring-1 ring-slate-200">🔒 개인정보 수집 없음</li>
         </ul>

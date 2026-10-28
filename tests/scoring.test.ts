@@ -61,10 +61,14 @@ describe("원점수 합과 정규화", () => {
     expect(v).toEqual({ X: 1, A: -1, C: 0, E: 0.5, O: -0.5, H: 0 });
   });
 
-  it("모두 5로 답하면 정채점 4개·역채점 3개라서 (20+3)/7 평균이 된다", () => {
+  it("모두 5로 답하면 정채점은 5점, 역채점은 1점으로 평균이 난다", () => {
     const v = scoreAnswers(items, answerAll(5));
-    const expected = ((20 + 3) / 7 - 3) / 2;
-    for (const dim of DIMENSION_IDS) expect(v[dim]).toBeCloseTo(expected, 10);
+    for (const dim of DIMENSION_IDS) {
+      const dimItems = items.filter((i) => i.dimension === dim);
+      const reversed = dimItems.filter((i) => i.reverse).length;
+      const mean = (5 * (dimItems.length - reversed) + 1 * reversed) / dimItems.length;
+      expect(v[dim]).toBeCloseTo((mean - 3) / 2, 10);
+    }
   });
 
   it("점수는 항상 -1~+1 범위다", () => {
@@ -86,8 +90,8 @@ describe("원점수 합과 정규화", () => {
     expect(() => scoreAnswers(items, { ...answerAll(3), [items[0].id]: 2.5 })).toThrow();
   });
 
-  it("차원별 문항 수는 7개씩이다", () => {
-    for (const dim of DIMENSION_IDS) expect(itemsPerDimension[dim]).toBe(7);
+  it("차원별 문항 수는 9개씩이다", () => {
+    for (const dim of DIMENSION_IDS) expect(itemsPerDimension[dim]).toBe(9);
   });
 });
 

@@ -5,7 +5,8 @@
 import { isValidResponse } from "./scoring";
 import type { Answers } from "./types";
 
-const PROGRESS_KEY = "archetype-test:v1:progress";
+// v2: 54문항으로 개편. 42문항 시절(v1)의 진행 상태는 문항이 달라 이어받지 않는다.
+const PROGRESS_KEY = "archetype-test:v2:progress";
 const LAST_RESULT_KEY = "archetype-test:v1:last-result";
 
 export interface Progress {
