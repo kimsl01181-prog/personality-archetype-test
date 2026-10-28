@@ -1,0 +1,56 @@
+[
+  {
+    "id": "X",
+    "name": "에너지 방향",
+    "academic": "외향성",
+    "academicEn": "eXtraversion",
+    "description": "사람과 자극에서 에너지를 얻는 정도",
+    "high": { "label": "사람 충전형", "description": "사람들과 어울리고 표현하며 활력을 얻어요" },
+    "low": { "label": "혼자 충전형", "description": "조용한 시간에 회복하고 깊이 있는 관계를 선호해요" }
+  },
+  {
+    "id": "A",
+    "name": "관계 온도",
+    "academic": "원만성",
+    "academicEn": "Agreeableness",
+    "description": "관용, 타협, 화를 다스리는 정도",
+    "high": { "label": "포용형", "description": "너그럽고 유연하게 상대에게 맞춰가요" },
+    "low": { "label": "솔직형", "description": "기준이 분명하고 할 말은 하는 편이에요" }
+  },
+  {
+    "id": "C",
+    "name": "계획성",
+    "academic": "성실성",
+    "academicEn": "Conscientiousness",
+    "description": "정리, 계획, 끈기, 신중함의 정도",
+    "high": { "label": "계획형", "description": "미리 정리하고 꾸준히 끝까지 해내요" },
+    "low": { "label": "유연형", "description": "즉흥적이고 상황에 맞춰 빠르게 움직여요" }
+  },
+  {
+    "id": "E",
+    "name": "감수성",
+    "academic": "정서성",
+    "academicEn": "Emotionality",
+    "description": "걱정, 공감, 정서적 반응의 섬세함",
+    "high": { "label": "섬세형", "description": "감정의 결을 풍부하게 느끼고 깊이 공감해요" },
+    "low": { "label": "담대형", "description": "침착하고 압박 속에서도 잘 흔들리지 않아요" }
+  },
+  {
+    "id": "O",
+    "name": "호기심",
+    "academic": "개방성",
+    "academicEn": "Openness to Experience",
+    "description": "새로운 경험, 아이디어, 미적 감수성에 끌리는 정도",
+    "high": { "label": "탐험형", "description": "새로운 경험과 낯선 아이디어에 끌려요" },
+    "low": { "label": "현실형", "description": "검증된 방식과 실용성을 중요하게 여겨요" }
+  },
+  {
+    "id": "H",
+    "name": "담백함",
+    "academic": "정직-겸손",
+    "academicEn": "Honesty-Humility",
+    "description": "공정함, 겸손, 과시나 이익 추구가 적은 정도",
+    "high": { "label": "담백형", "description": "공정하고 겸손하며 과시하지 않아요" },
+    "low": { "label": "야망형", "description": "성취와 인정을 원하고 자신을 드러낼 줄 알아요" }
+  }
+]
